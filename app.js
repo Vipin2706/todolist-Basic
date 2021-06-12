@@ -64,6 +64,6 @@ res.redirect("/")
 });
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
   console.log("server started on port : 3000");
 })
